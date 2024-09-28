@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap');
+    </style> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "RIMJm6XhoDCeDClyE",
+            });
+        })();
+
+        function sendmail() {
+
+            var email = document.getElementById("email").value;
+
+            var templateParams = {
+                email: email
+            };
+
+            emailjs.send('service_on8vkc5', 'template_n0k15j1', templateParams)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    window.alert("Sent successfully!");
+                }, function (error) {
+                    console.log('FAILED...', error);
+                    window.alert("Failed to send");
+                });
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ICE CREAM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Menu.html">Flavor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn p-2 my-lg-0 my-2" id="login">Search</button>
+
+            </div>
+    </nav>
+
+
+    <!-- about -->
+
+    <!-- <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 my-2">
+                <img src="about image.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 my-2 p-lg-5 p-2">
+                <h1>ABOUT US</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quae ratione sed hic mollitia
+                    esse
+                    laborum aliquid corporis minus vero nam nisi ea perspiciatis, officia saepe, molestiae recusandae!
+                    Dicta,
+                    commodi.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, fuga nam nesciunt at in sequi,
+                    nihil eum
+                    neque molestiae, Dignissimos, totam
+                    consectetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facere nihil
+                    eligendi ipsum
+                    distinctio eum quaerat reiciendis alias.aspernatur dolorum quae explicabo cupiditate minima natus
+                    quod
+                    voluptatum assumenda eaque voluptate!<br><br>deleniti soluta natus numquam vero voluptate quo
+                    facilis
+                    similique
+                    recusandae hic maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ab veniam
+                    commodi
+                    eius perferendis amet, mollitia magnam nostrum libero atque assumenda ullam minima natus quod
+                    voluptatum
+                    velit possimus cumque odit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque impedit
+                    similique illo debitis neque mollitia, deleniti dolorum totam magni quo corrupti accusantium ratione
+                    explicabo iste. Dolore nisi magnam ad illum.</p>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- history -->
+    <div id="history" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 my-2 p-lg-5 p-2">
+                <h3>Ice cream history</h3>
+                <p>Sit down and let<br>
+                    us tell you a story</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 my-2">
+                <img class="img1" src="history1 img.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="content">
+        <div id="historycon" class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 my-2">
+                    <img src="ancient img.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 my-2 p-lg-5 p-2">
+                    <h1>5th century B.C.</h1>
+                    <h5>Once upon a time</h5>
+                    <p>Ancient Greeks enjoy a dessert similar to ice cream. <br>And this is where our story begins!</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="historycon1" class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 my-2 p-lg-5 p-2">
+                    <h1>1300s</h1>
+                    <h5>Ice cream, ho!</h5>
+                    <p>Marco Polo brings an early form of ice cream to Europe. We imagine the popular pool game
+                        started
+                        with ice cream-craving fans searching in the night for Marco! (Polo!)</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 my-2">
+                    <img src="marco img.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="historycon" class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 my-2">
+                    <img src="1700 img.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 my-2 p-lg-5 p-2">
+                    <h1>1700s</h1>
+                    <h5>Ooo, fancy!</h5>
+                    <p>Ice Cream is introduced to America as a delicacy enjoyed by high society due to its expensive
+                        ingredients and lack of available refrigerators.</p>
+                </div>
+            </div>
+        </div>
+        <div id="historycon1" class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 my-2 p-lg-5 p-2">
+                    <h1>1776</h1>
+                    <h5>Open for business!</h5>
+                    <p>America's first ice cream parlor opens its doors in New York. And you thought lines were bad
+                        today...</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 my-2">
+                    <img src="1776 img.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="historycon" class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 my-2">
+                    <img src="1840 img.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-6 col-12 my-2 p-lg-5 p-2">
+                    <h1>1840s</h1>
+                    <h5>A labor of love!</h5>
+                    <p>Now that's what we call mass production. The ice cream churn is invented, and now we can make ice
+                        cream by the bucket!</p> <br>
+                    <h1>1851</h1>
+                    <h5>First ice cream plant</h5>
+                    <p>Doors open to one of the sweetest buildings ever - the very first ice cream plant.</p>
+                </div>
+            </div>
+            <div id="historycon1" class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 my-2 p-lg-5 p-2">
+                        <h1>1880s</h1>
+                        <h5>What a scoop</h5>
+                        <p>Get your fixin's and grab your bowls! The ice cream sundae is born.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 my-2">
+                        <img src="1880 img.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="historycon" class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 my-2">
+                        <img src="1904 img.png" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 my-2 p-lg-5 p-2">
+                        <h1>1904</h1>
+                        <h5>Hello Drumstick!</h5>
+                        <p>Rumor has it, the waffle cone makes its debut at the world's fair in St. Louis, Mo. after an
+                            ice cream vendor ran out of bowls. Good thing the waffle maker stepped in to help!</p>
+                    </div>
+                </div>
+                <div id="historycon1" class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 my-2 p-lg-5 p-2">
+                            <h1>1929</h1>
+                            <h5>Things got rocky</h5>
+                            <p>William Dreyer and Joseph Edy create Rocky Road ice cream! It joins vanilla, chocolate
+                                and strawberry as most widely available flavors.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 my-2">
+                            <img src="1929 img.png" alt="">
+                        </div>
+                    </div>
+                    <div id="historycon" class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12 my-2">
+                                <img src="1960 img.png" alt="">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 my-2 p-lg-5 p-2">
+                                <h1>1960 (ish)</h1>
+                                <h5>Häagen-Dazs</h5>
+                                <p>William Dreyer and Joseph Edy create Rocky Road ice cream! It joins vanilla,
+                                    chocolate and strawberry as most widely available flavors.</p>
+                            </div>
+                        </div>
+                        <div id="historycon1" class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12 my-2 p-lg-5 p-2">
+                                    <h1>1984</h1>
+                                    <h5>Start the fireworks</h5>
+                                    <p>July is declared National Ice Cream Month, but you can still enjoy it all year
+                                        long!</p>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12 my-2">
+                                    <img src="1984 img.png" alt="">
+                                </div>
+                            </div>
+                            <div id="historycon" class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12 my-2">
+                                        <img src="today img.png" alt="">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12 my-2 p-lg-5 p-2">
+                                        <h1>Today</h1>
+                                        <h5>For the love of ice cream</h5>
+                                        <p>90% of freezers in the USA are chilling ice cream, making it the best selling
+                                            treat in America next to cookies! Make sure your freezer does, too!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- footer -->
+
+                        <footer class="footer">
+                            <div class="container">
+                                <div class="row1">
+                                    <div class="footer-col">
+                                        <h4>company</h4>
+                                        <ul>
+                                            <li><a href="">about us</a></li>
+                                            <li><a href="">our services</a></li>
+                                            <li><a href="">privacy policy</a></li>
+                                            <li><a href="">affiliate program</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-col">
+                                        <h4>get help</h4>
+                                        <ul>
+                                            <li><a href="">FAQ</a></li>
+                                            <li><a href="">shipping</a></li>
+                                            <li><a href="">returns</a></li>
+                                            <li><a href="">order status</a></li>
+                                            <li><a href="">payment options</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-col">
+                                        <h4>online shop</h4>
+                                        <ul>
+                                            <li><a href="">ice cream</a></li>
+                                            <li><a href="">cake</a></li>
+                                            <li><a href="">dessert</a></li>
+                                            <li><a href="">cookies</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-col">
+                                        <h4>follow us</h4>
+                                        <div class="social-links">
+                                            <a href=""><i class="fab fa-facebook"></i></a>
+                                            <a href=""><i class="fab fa-twitter"></i></a>
+                                            <a href=""><i class="fab fa-instagram"></i></a>
+                                            <a href=""><i class="fab fa-linkedin"></i></a>
+                                            <br>
+                                            <a href=""><i class="fa fa-phone" aria-hidden="true"></i></a>
+                                            <i class="num">9876543210</i>
+                                            <br>
+                                            <a href=""><i class="fa-solid fa-envelope"></i></a>
+                                            <i class="join">Join us</i>
+                                            <form>
+                                                <label></label>
+                                                <input type="email" placeholder="Email ID">
+                                                <button onclick="sendmail()" id="email">JOIN</button>
+                                            </form>
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                        </footer>
+
+
+
+
+
+
+</body>
+
+</html>
